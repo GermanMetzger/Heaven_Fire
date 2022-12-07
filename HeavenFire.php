@@ -126,8 +126,8 @@ do{
             echo "2)No.\n";
             $bandera = solicitarNumeroEntre(1,2);
             if ($bandera == 1){
-                $arkarot = true;
-                $inventario["slot".$espaciosOcupados]["arkarot"] = $arkarot;
+                $arkarot = "Arkarot";
+                $inventario["slot".$espaciosOcupados] = $arkarot;
                 $espaciosOcupados++;
                 echo "Amuleto de Arkarot agregado.\n";
                 echo "tu ♥salud maxima♥ aumenta de (100 -> 125).\n";
@@ -163,8 +163,8 @@ do{
             echo "2)No.\n";
             $bandera = solicitarNumeroEntre(1,2);
             if ($bandera == 1){
-                $piedra = true;
-                $inventario["slot".$espaciosOcupados]["piedra"] = $piedra;
+                $piedra = "Piedra";
+                $inventario["slot".$espaciosOcupados] = $piedra;
                 $espaciosOcupados++;
                 echo "Piedra agregada.\n";
             }
